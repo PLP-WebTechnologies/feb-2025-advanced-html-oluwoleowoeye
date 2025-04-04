@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My second html assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>HTML Assignment 2</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Languages</h2>
+        <ol type="I">
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Nature</h2>
+        <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" alt="Beautiful nature scene from Pexels" width="600">
+        <p>Image source: <a href="https://pexels.com" target="_blank">Pexels.com</a></p>
+    </section>
+
+    <!-- Contacts Table -->
+    <section>
+        <h2>Contacts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Oluwole Owoeye</td>
+                    <td>Lagos, Nigeria</td>
+                    <td>2347038604166</td>
+                    <td>oluwoleowoeye1@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Gorge Flinston</td>
+                    <td>South Africa</td>
+                    <td>44748399</td>
+                    <td>test@example.com</td>
+                </tr>
+                <tr>
+                    <td>Pter Parker</td>
+                    <td>Kenya</td>
+                    <td>373884949</td>
+                    <td>test2@example.com</td>
+                </tr>
+                <tr>
+                    <td>Alice Brown</td>
+                    <td>Botswana</td>
+                    <td>373848449</td>
+                    <td>test3@example.com</td>
+                </tr>
+                <tr>
+                    <td>Charlie Wilson</td>
+                    <td>Ghana</td>
+                    <td>36478494</td>
+                    <td>test4@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form id="registrationForm" action="#" method="post">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" minlength="8" required>
+            </div>
+
+            <!-- Date Field -->
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <!-- Dropdown Menu -->
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="us">Nigeria</option>
+                    <option value="ca">Kenya</option>
+                    <option value="uk">Ghana</option>
+                    <option value="au">Cameroun</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Radio Buttons -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 HTML Assignment2</p>
+    </footer>
+</body>
+</html>
